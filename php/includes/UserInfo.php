@@ -1,0 +1,21 @@
+<?php
+
+require __DIR__ . "/../../php/api/ApiInfo.php";
+
+class UserInfo
+{
+    public function get_name(): string
+    {
+        // Get infos of the user
+        $result = (new ApiInfo($_SESSION['token']))->get_user_info();
+
+        if ($result['http_code'] == 200) {
+            // Concatenate the last name and the first name
+            return $result['data']->first_name . " " . $result['data']->last_name;
+        } else {
+            // Token expired, destroy the session and force the user to login
+            session_destroy();
+            header('Location: login.php?error=session_expired');
+        }
+    }
+}
