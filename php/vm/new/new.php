@@ -1,7 +1,6 @@
 <?php
 
 require_once __DIR__ . "/../../api/ApiVm.php";
-require __DIR__ . "/../../Config.php";
 
 session_start();
 
@@ -51,7 +50,7 @@ function get_form_data()
 
         if ($result['http_code'] == 201) {
             // VM created successfully, redirect to VM page
-            header('Location: ' . Config::SITE_URL . '/vm.php?message=vm_created');
+            header('Location: https://panel.storagehost.ch/vm.php?message=vm_created');
         } else {
             //var_dump($result);
         }
