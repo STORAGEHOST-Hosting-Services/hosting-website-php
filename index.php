@@ -18,7 +18,9 @@ function get_vms()
         //var_dump($user_vms);
         foreach ($user_vms['data'] as $user_vm) {
             if ($user_vm->power_status == 0) {
-                echo "<p class='text-left'>Votre machine " . $user_vm->hostname . " ne s'exécute pas actuellement</p><br/>";
+                echo "<div class='col-12 mt-xl-2'>";
+                echo "<p class='text-left'>Votre machine " . $user_vm->hostname . " ne s'exécute pas actuellement.</p><br/>";
+                echo "</div>";
                 // VM is shutted down, do not show it
             } else {
                 echo "<div class='col-6 text-left boxes mt-xl-2'>";
