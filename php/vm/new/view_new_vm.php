@@ -1,7 +1,5 @@
 <?php
 
-require __DIR__ . "/../../Config.php";
-
 if (empty($_SESSION)) {
     header('Location: ' . Config::SITE_URL . '/login.php?error=session_expired');
 }
@@ -9,7 +7,7 @@ if (empty($_SESSION)) {
 require_once __DIR__ . "/../../../php/includes/UserInfo.php";
 
 if (empty($_GET)) {
-    header('Location: ' . Config::SITE_URL . '/order.php');
+    header('Location: https://panel.storaehost.ch/order.php');
 } else {
     $decoded_url = explode('&', base64_decode($_GET['data']));
 
