@@ -32,9 +32,9 @@ function get_vms()
                 echo "</div>";
                 echo "<div class='col-6 mt-4 text-left'>";
                 echo "<div class='row'>
+<a href='console.php?data=" . base64_encode($user_vm->hostname) . "' target='_blank' class='btn btn-info mx-auto'>Se connecter</a>
 <button class='btn btn-success mx-md-auto mx-sm-4' onclick='displayWip()'>Démarrer l'instance</button>
 <button class='btn btn-danger mx-md-auto mx-sm-3' onclick='displayWip()'>Stopper l'instance</button>
-<button class='btn btn-danger mx-md-auto mx-sm-3' onclick='displayWip()'>Supprimer l'instance</button>
 </div>";
             }
         }

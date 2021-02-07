@@ -28,7 +28,7 @@ function get_vms()
             echo "</div>";
             echo "<div class='col-12 col-md-6 col-sm-12 mt-4 text-left'>";
             echo "<div class='row'>
-<a href='console.php?" . base64_encode("hostname=" . $vm->hostname) . "' target='_blank' class='btn btn-info mx-auto'>Se connecter</a>
+<a href='console.php?data=" . base64_encode($vm->hostname) . "' target='_blank' class='btn btn-info mx-auto'>Se connecter</a>
 <button class='btn btn-success mx-auto' onclick='displayWip()'>Démarrer l'instance</button>
 <button class='btn btn-danger mx-auto' onclick='displayWip()'>Stopper l'instance</button>
 </div>";
