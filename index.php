@@ -2,9 +2,7 @@
 
 session_start();
 
-require "php/home/model_home.php";
-
-var_dump($_SESSION);
+//var_dump($_SESSION);
 
 global $user_vms;
 
@@ -40,15 +38,6 @@ function get_vms()
         }
     } else {
         return "<p class='text-left'>Vous n'avez pas de machines virtuelles.</p>";
-    }
-}
-
-function get_control_actions()
-{
-    global $user_vms;
-
-    if (empty($user_vms['data'])) {
-        return "<p class='box text-left'>Pas d'action de contrôle disponible.</p>";
     }
 }
 

@@ -1,13 +1,15 @@
 <?php
 
+require __DIR__ . "/../../Config.php";
+
 if (empty($_SESSION)) {
-    header('Location: http://localhost/login.php?error=session_expired');
+    header('Location: ' . Config::SITE_URL . '/login.php?error=session_expired');
 }
 
 require_once __DIR__ . "/../../../php/includes/UserInfo.php";
 
 if (empty($_GET)) {
-    header('Location: http://localhost/order.php');
+    header('Location: ' . Config::SITE_URL . '/order.php');
 } else {
     $decoded_url = explode('&', base64_decode($_GET['data']));
 
@@ -83,14 +85,16 @@ if (empty($_GET)) {
                     <form class="mt-xl-3" method="post">
                         <div class="form-group">
                             <label for="username">Nom d'utilisateur</label>
-                            <input type="text" class="form-control" id="username" name="username" placeholder="johndoe" required>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="johndoe"
+                                   required>
                             <p class="text-danger text-left mt-1">Le nom d'utilisateur ne doit pas
                                 contenir de point, de virgule ou de tiret du bas !</p>
                         </div>
 
                         <div class="form-group">
                             <label for="password">Mot de passe</label>
-                            <input type="password" class="form-control" id="password" name="password" placeholder="********" required>
+                            <input type="password" class="form-control" id="password" name="password"
+                                   placeholder="********" required>
                             <p class="text-danger text-left mt-1">8 caractères, 1 chiffre, 1 lettre majuscule au minimum
                                 !</p>
                         </div>
@@ -112,13 +116,15 @@ if (empty($_GET)) {
 
                         <div class="form-group">
                             <label for="order_type">Type de commande</label>
-                            <input type="text" class="form-control" id="order_type" name="order_type" value="<?= $order_type ?>"
+                            <input type="text" class="form-control" id="order_type" name="order_type"
+                                   value="<?= $order_type ?>"
                                    readonly="readonly" required>
                         </div>
 
                         <div class="form-group">
                             <label for="order_number">N° de commande</label>
-                            <input type="text" class="form-control" id="order_number" name="order_number" value="<?= $order_id ?>"
+                            <input type="text" class="form-control" id="order_number" name="order_number"
+                                   value="<?= $order_id ?>"
                                    readonly="readonly" required>
                         </div>
 

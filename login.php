@@ -24,10 +24,6 @@ getFormData();
  */
 function getFormData()
 {
-    /**if (!empty($_SESSION)) {
-        header('Location: index.php');
-    }*/
-
     global $error;
 
     $valid_form_data = array();

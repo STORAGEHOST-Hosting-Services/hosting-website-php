@@ -1,6 +1,7 @@
 <?php
 
 require __DIR__ . "/../../php/api/ApiInfo.php";
+require __DIR__ . "/../Config.php";
 
 class UserInfo
 {
@@ -15,7 +16,7 @@ class UserInfo
         } else {
             // Token expired, destroy the session and force the user to login
             session_destroy();
-            header('Location: login.php?error=session_expired');
+            header('Location: ' . Config::SITE_URL . 'login.php?error=session_expired');
         }
     }
 }

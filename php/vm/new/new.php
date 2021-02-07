@@ -1,10 +1,11 @@
 <?php
 
-require_once __DIR__."/../../api/ApiVm.php";
+require_once __DIR__ . "/../../api/ApiVm.php";
+require __DIR__ . "/../../Config.php";
 
 session_start();
 
-var_dump($_SESSION);
+//var_dump($_SESSION);
 
 get_form_data();
 
@@ -42,17 +43,17 @@ function get_form_data()
             return;
         }
 
-        var_dump($valid_form_data);
-        var_dump($form_data);
+        //var_dump($valid_form_data);
+        //var_dump($form_data);
 
         // Make the API call
         $result = (new ApiVm($_SESSION['token'], $valid_form_data['username'], $valid_form_data['password'], $form_data['os'], $form_data['order_type'], $form_data['order_number']))->create_vm();
 
         if ($result['http_code'] == 201) {
             // VM created successfully, redirect to VM page
-            header('Location: http://localhost/vm.php?message=vm_created');
+            header('Location: ' . Config::SITE_URL . '/vm.php?message=vm_created');
         } else {
-            var_dump($result);
+            //var_dump($result);
         }
     }
 }
