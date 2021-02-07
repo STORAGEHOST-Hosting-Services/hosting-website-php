@@ -50,7 +50,7 @@ function get_form_data()
 
         if ($result['http_code'] == 201) {
             // VM created successfully, redirect to VM page
-            header('Location: ' . Config::SITE_URL . '/vm.php?message=vm_created');
+            header('Location: http://localhost/vm.php?message=vm_created');
         } else {
             //var_dump($result);
         }

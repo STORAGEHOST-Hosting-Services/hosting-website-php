@@ -65,9 +65,6 @@ require_once "php/includes/UserInfo.php";
 <main style="margin-top: 15px;" class="container-fluid text-center bg-light2 mt-xl-3">
     <section class="container mb-xl-5">
         <h2 class="text-center mb-xl">Vos commandes</h2>
-        <?php if ($_GET['message'] == "vm_created") {
-            echo "<p class='text-success'>Votre machine a bien été créée ! <br/> Votre machine peut prendre jusqu'à 48h pour être installée En cas de questions, contactez l'administrateur.</p>";
-        } ?>
         <div class="container border-top mt-xl-3">
             <div class="row">
                 <div class="col-md-12">

@@ -31,6 +31,7 @@ function get_vms()
 <a href='console.php?data=" . base64_encode($vm->hostname) . "' target='_blank' class='btn btn-info mx-auto'>Se connecter</a>
 <button class='btn btn-success mx-auto' onclick='displayWip()'>Démarrer l'instance</button>
 <button class='btn btn-danger mx-auto' onclick='displayWip()'>Stopper l'instance</button>
+</div>
 </div>";
         }
     } else {
