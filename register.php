@@ -41,12 +41,14 @@ function getFormData()
         $valid_form_data['password'] = $_POST['password'];
         $valid_form_data['password_conf'] = $_POST['password_conf'];
 
+        //var_dump($valid_form_data);
+
         $api = new ApiRegister($valid_form_data);
 
         // Call the function to check if the user exists in DB
         $result = $api->register();
 
-        var_dump($result);
+        //var_dump($result);
 
         if ($result['http_code'] == 201) {
             header('Location: login.php?message=register_success');
@@ -68,6 +70,8 @@ function getError(): string
         return "<p id=\"error\" class=\"mt-xl-3 text-center text-danger\">Erreur lors de l'envoi du formulaire. <a href='mailto:admin@storagehost.ch'>Contactez l'administrateur</a>.</p>";
     } elseif ($error == "bad_password") {
         return "<p id=\"error\" class=\"mt-xl-3 text-center text-danger\">Les mots de passe ne correspondent pas.</p>";
+    } elseif ($error == "bad_country") {
+        return "<p id=\"error\" class=\"mt-xl-3 text-center text-danger\">Le pays saisi n'est pas valide.</p>";
     } else {
         return "";
     }

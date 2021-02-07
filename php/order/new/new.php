@@ -2,7 +2,6 @@
 
 require_once __DIR__ . "/../../../php/api/ApiOrder.php";
 require_once __DIR__ . "/../../../php/api/ApiVm.php";
-require __DIR__ . "/../../Config.php";
 
 session_start();
 
@@ -27,7 +26,7 @@ function post_orders()
             //var_dump($result['data']);
             // The request is successful, redirect to the VM page
             $url_string = "order_id=" . $result['data'][0]->data->order_id . "&order_type=" . $result['data'][0]->data->order_type . "&user_id=" . $result['data'][0]->data->user_id;
-            header('Location: ' . Config::SITE_URL . '/php/vm/new/new.php?data=' . base64_encode($url_string));
+            header('Location: https://panel.storagehost.ch/php/vm/new/new.php?data=' . base64_encode($url_string));
             //var_dump($result['data'][0]->data);
             //return create_vm((int)$result['data'][0]->data->order_id);
         } else {
