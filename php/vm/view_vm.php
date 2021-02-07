@@ -65,6 +65,7 @@ require_once "php/includes/UserInfo.php";
 <main style="margin-top: 15px;" class="container-fluid text-center bg-light2 mt-xl-3">
     <section class="container">
         <h2 class="text-center mb-xl">Vos machines virtuelles</h2>
+
         <div class="container border-top mt-xl-3">
             <div class="row">
                 <div class="col-md-12 col-8 mt-xl-3">
@@ -80,4 +81,4 @@ require_once "php/includes/UserInfo.php";
     <div style="margin-left: 0; width: auto; padding: 0 15px;"><span>© STORAGEHOST - Hosting Services</span></div>
 </footer>
 </body>
-</html
+</html>

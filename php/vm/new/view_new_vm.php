@@ -74,8 +74,7 @@ if (empty($_GET)) {
 <main style="margin-top: 15px;" class="container-fluid text-center bg-light2 mt-xl-3">
     <section class="container">
         <h2 class="text-center mb-xl">Nouveau VPS</h2>
-        <p class="text-success">Merci de votre commande ! <br/> Un email de confirmation de commande vous a été envoyé.
-        </p>
+        <p class="text-success">Merci de votre commande ! <br/> Un email de confirmation de commande vous a été envoyé.</p>
         <p>Utilisez le formulaire ci-dessous pour créer votre VPS.</p>
         <div class="container border-top mt-xl-3">
             <div class="row">
@@ -142,4 +141,4 @@ if (empty($_GET)) {
     <div style="margin-left: 0; width: auto; padding: 0 15px;"><span>© STORAGEHOST - Hosting Services</span></div>
 </footer>
 </body>
-</html
+</html>
