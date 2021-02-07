@@ -1,7 +1,7 @@
 <?php
 
 if (empty($_SESSION)) {
-    header('Location: ' . Config::SITE_URL . '/login.php?error=session_expired');
+    header('Location: https://panel.storagehost.ch/login.php?error=session_expired');
 }
 
 require_once __DIR__ . "/../../../php/includes/UserInfo.php";
