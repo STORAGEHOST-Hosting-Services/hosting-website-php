@@ -72,9 +72,9 @@ include __DIR__ . "/../../php/includes/include_login.php";
         </div>
     </section>
 </main>
-<?php
-include "php/includes/footer.php";
-?>
+<footer class="footer-orders">
+    <div style="margin-left: 0; width: auto; padding: 0 15px;"><span>© STORAGEHOST - Hosting Services</span></div>
+</footer>
 </body>
 </html
 
