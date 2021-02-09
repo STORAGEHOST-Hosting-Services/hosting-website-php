@@ -19,7 +19,7 @@ function get_vms()
         $vms = $result['data'];
         foreach ($vms as $vm) {
             //var_dump($vm);
-            echo "<div class='col-12 col-md-6 text-left col-sm-12 boxes mt-2 mb-4'>";
+            echo "<div class='col-12 col-md-6 text-left col-sm-12 boxes mt-2 mb-4' id='$vm->hostname'>";
             echo "<strong>Nom d'hôte :</strong> " . $vm->hostname . ".hosting.storagehost.net<br/>";
             echo "<strong>Adresse IP de management :</strong> " . $vm->ip . "<br/>";
             echo "<strong>Système d'exploitation :</strong> " . get_os_name($vm->os) . "<br/>";
