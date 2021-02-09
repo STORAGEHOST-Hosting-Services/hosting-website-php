@@ -32,6 +32,7 @@ function get_vms()
                 echo "<div class='row'>";
                 echo "<a class='text-info' href='https://panel.storagehost.ch/vm.php#" . $user_vm->hostname ."'>Gérer la machine</a>";
                 echo "</div>";
+                echo "</div>";
             }
         }
     } else {
