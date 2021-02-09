@@ -28,7 +28,7 @@ function get_vms()
                 echo "<strong>Adresse IP de management :</strong> " . $user_vm->ip . "<br/>";
                 echo "<strong>N° de commande :</strong> " . $user_vm->order_id . "<br/>";
                 echo "</div>";
-                echo "<div class='col-6 mt-4 text-left'>";
+                echo "<div class='col-12 col-md-6 col-sm-12 mt-4 text-left'>";
                 echo "<div class='row'>";
                 echo "<a class='text-info' href='https://panel.storagehost.ch/vm.php#" . $user_vm->hostname ."'>Gérer la machine</a>";
                 echo "</div>";
