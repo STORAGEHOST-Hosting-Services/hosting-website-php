@@ -48,7 +48,7 @@ function getFormData()
         // Call the function to check if the user exists in DB
         $result = $api->register();
 
-        var_dump($result);
+        //var_dump($result);
 
         if ($result['http_code'] == 201) {
             header('Location: login.php?message=register_success');
@@ -72,6 +72,16 @@ function getError(): string
         return "<p id=\"error\" class=\"mt-xl-3 text-center text-danger\">Les mots de passe ne correspondent pas.</p>";
     } elseif ($error == "bad_country") {
         return "<p id=\"error\" class=\"mt-xl-3 text-center text-danger\">Le pays saisi n'est pas valide.</p>";
+    } elseif ($error == "bad_zip") {
+        return "<p id=\"error\" class=\"mt-xl-3 text-center text-danger\">Le code postal saisi n'est pas valide.</p>";
+    } elseif ($error == "bad_address") {
+        return "<p id=\"error\" class=\"mt-xl-3 text-center text-danger\">L'adresse saisie n'est pas valide.</p>";
+    } elseif ($error == "bad_country") {
+        return "<p id=\"error\" class=\"mt-xl-3 text-center text-danger\">Le pays saisi n'est pas valide.</p>";
+    } elseif ($error == "bad_phone") {
+        return "<p id=\"error\" class=\"mt-xl-3 text-center text-danger\">Le téléphone saisi n'est pas valide.</p>";
+    } elseif ($error == "bad_city") {
+        return "<p id=\"error\" class=\"mt-xl-3 text-center text-danger\">La ville saisie n'est pas valide.</p>";
     } else {
         return "";
     }
