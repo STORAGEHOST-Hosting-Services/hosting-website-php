@@ -48,7 +48,7 @@ function getFormData()
         // Call the function to check if the user exists in DB
         $result = $api->register();
 
-        //var_dump($result);
+        var_dump($result);
 
         if ($result['http_code'] == 201) {
             header('Location: login.php?message=register_success');
