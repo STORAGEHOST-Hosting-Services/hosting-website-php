@@ -35,7 +35,7 @@ function getInfos(data) {
                 "<tbody>" +
                 "<tr>" +
                 "<td class='text-success'>Disponible</td>" +
-                "<td>2 vCPU,<br/>2 Go RAM,<br/>25 Go stockage</td>" +
+                "<td>2 vCPU,<br/>4 Go RAM,<br/>25 Go stockage</td>" +
                 "<td>5 CHF/mois</td>" +
                 "</tr>" +
                 "</tbody>" +
@@ -44,7 +44,7 @@ function getInfos(data) {
             break;
         case "s1m":
             info = "<strong><p class='text-center'>VPS s1.medium</p></strong><br/>" +
-                "<p class='text-center'>Optimal pour l’exécution de petites applications ou pour un petit serveur Web.</p>" +
+                "<p class='text-center'>Optimal pour l’exécution de petites applications ou pour un serveur Web.</p>" +
                 "<div class='table'>" +
                 "<table class='table'>" +
                 "<thead>" +
@@ -55,7 +55,7 @@ function getInfos(data) {
                 "<tbody>" +
                 "<tr>" +
                 "<td class='text-success'>Disponible</td>" +
-                "<td>2 vCPU,<br/>4 Go RAM,<br/>50 Go stockage</td>" +
+                "<td>4 vCPU,<br/>8 Go RAM,<br/>50 Go stockage</td>" +
                 "<td>10 CHF/mois</td>" +
                 "</tr>" +
                 "</tbody>" +
@@ -75,7 +75,7 @@ function getInfos(data) {
                 "<tbody>" +
                 "<tr>" +
                 "<td class='text-success'>Disponible</td>" +
-                "<td>4 vCPU,<br/>8 Go RAM,<br/>75 Go stockage</td>" +
+                "<td>4 vCPU,<br/>16 Go RAM,<br/>75 Go stockage</td>" +
                 "<td>15 CHF/mois</td>" +
                 "</tr>" +
                 "</tbody>" +
@@ -84,7 +84,7 @@ function getInfos(data) {
             break;
         case "s2s":
             info = "<strong><p class='text-center'>VPS s2.small</p></strong><br/>" +
-                "<p class='text-center'>Optimal pour l'exécution d’applications demandant plus de mémoire vive (serveur Web fréquemment utilisé).</p>" +
+                "<p class='text-center'>Optimal pour exécution d’applications demandant plus de mémoire vive (serveur Web fréquemment utilisé). Possibilité de configurer une base de données.</p>" +
                 "<div class='table'>" +
                 "<table class='table'>" +
                 "<thead>" +
@@ -95,7 +95,7 @@ function getInfos(data) {
                 "<tbody>" +
                 "<tr>" +
                 "<td class='text-success'>Disponible</td>" +
-                "<td>4 vCPU,<br/>16 Go RAM,<br/>150 Go stockage</td>" +
+                "<td>6 vCPU,<br/>32 Go RAM,<br/>150 Go stockage</td>" +
                 "<td>20 CHF/mois</td>" +
                 "</tr>" +
                 "</tbody>" +
@@ -115,7 +115,7 @@ function getInfos(data) {
                 "<tbody>" +
                 "<tr>" +
                 "<td class='text-success'>Disponible</td>" +
-                "<td>6 vCPU,<br/>32 Go RAM,<br/>200 Go stockage</td>" +
+                "<td>8 vCPU,<br/>64 Go RAM,<br/>200 Go stockage</td>" +
                 "<td>30 CHF/mois</td>" +
                 "</tr>" +
                 "</tbody>" +
@@ -134,8 +134,8 @@ function getInfos(data) {
                 "</thead>" +
                 "<tbody>" +
                 "<tr>" +
-                "<td class='text-success'>Disponible</td>" +
-                "<td>8 vCPU,<br/>64 Go RAM,<br/>300 Go stockage</td>" +
+                "<td class='text-danger'>Indisponible</td>" +
+                "<td>12 vCPU,<br/>128 Go RAM,<br/>300 Go stockage</td>" +
                 "<td>50 CHF/mois</td>" +
                 "</tr>" +
                 "</tbody>" +
