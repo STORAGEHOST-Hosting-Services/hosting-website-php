@@ -104,7 +104,6 @@ if (empty($_GET)) {
                                 <option value="" selected disabled hidden>Choisissez l'OS...</option>
                                 <optgroup label="Linux">
                                     <option value="debian10">Debian 10</option>
-                                    <option value="centos8">CentOS 8</option>
                                     <option value="ubuntu2004">Ubuntu 20.04</option>
                                     <option value="winsrv">Windows Server 2016 Core</option>
                                 </optgroup>
